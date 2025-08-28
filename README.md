@@ -2,9 +2,11 @@
 
 ## One-paragraph summary for slides
 
-<video width="640" height="480" controls>
+<!-- <video width="640" height="480" controls>
   <source src="data/campaign-2025-08-29_00.53.32.mp4" type="video/mp4">
-</video>
+</video> -->
+
+<video src="data/campaign-2025-08-29_00.53.32.mp4" width="640" height="480" controls></video>
 
 We built an AI assistant that converts a short marketing brief into activation-ready campaign concepts tailored to Thailand’s channels (e.g., LINE OA, TikTok). It outputs big idea, channel plan, budget split, timeline, and KPIs, in English or Thai, with validation and safety checks. This accelerates strategy work, standardizes deliverables, and keeps outputs compatible with CRM/loyalty activation—so teams move from idea to execution faster, with consistent quality.
 
