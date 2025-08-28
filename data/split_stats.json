@@ -1,0 +1,17 @@
+{
+  "input": "data/train_synth.jsonl",
+  "outdir": "data",
+  "seed": 42,
+  "val_size": 0.02,
+  "actual_counts": {
+    "train": 6750,
+    "val": 138
+  },
+  "train_stats": {
+    "count": 6750
+  },
+  "val_stats": {
+    "count": 138
+  },
+  "stratify_key": null
+}

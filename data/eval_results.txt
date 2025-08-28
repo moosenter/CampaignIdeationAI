@@ -1,0 +1,2 @@
+before lora: Schema pass rate: 137/138 = 99.28%
+after lora: Schema pass rate: 138/138 = 100.00%

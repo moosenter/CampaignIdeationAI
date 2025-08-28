@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["concept_title","big_idea","key_message","channels","assets","timeline_weeks","budget_split","kpis"],
+  "properties": {
+    "concept_title": {"type": "string","minLength": 3},
+    "big_idea": {"type": "string"},
+    "key_message": {"type": "string"},
+    "channels": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name","activation","kpis"],
+        "properties": {
+          "name": {"type": "string"},
+          "activation": {"type": "string"},
+          "kpis": {"type": "object"}
+        },
+        "additionalProperties": true
+      }
+    },
+    "assets": {"type": "array","items": {"type": "string"}},
+    "timeline_weeks": {"type": "integer","minimum": 1},
+    "budget_split": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "prefixItems": [
+          {"type": "string"},
+          {"type": "number","minimum": 0,"maximum": 1}
+        ],
+        "minItems": 2,
+        "maxItems": 2
+      }
+    },
+    "kpis": {"type": "object"}
+  },
+  "additionalProperties": true
+}
+  
